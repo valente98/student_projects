@@ -1,7 +1,11 @@
 import student_core
-
+import disk
+import datetime
 def main():
-    print(student_core.intro())
+    current = datetime.datetime.now()
+    msg = student_core.intro()
+    disk.Check_in(msg)
+    print('You have checked in at', current)
 
 
 
