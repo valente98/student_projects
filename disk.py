@@ -1,4 +1,3 @@
-import student_core
 import datetime
 def Check_in(msg):
     """(str) --> str"""
@@ -23,4 +22,7 @@ def roster():
         file.readline()
         lines = file.readlines()
     for line in lines:
+        split_string = line.strip().split(', ')
+        names.append([split_string[0]])
+    return names
         
