@@ -1,11 +1,16 @@
 import student_core
 import disk
 import datetime
+def intro():
+    msg = input('Welcome to BASE CAMP CODING ACADEMY!\n Please type in your first and last name.: ')
+    return msg
+
 def main():
-    current = datetime.datetime.now()
-    msg = student_core.intro()
-    disk.Check_in(msg)
-    print('You have checked in at', current)
+    msg = intro()
+    if msg:
+        disk.Check_in(msg)
+    else:
+        print('Sorry invalid answer')
 
 
 
