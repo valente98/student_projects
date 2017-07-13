@@ -1,29 +1,39 @@
 import student_core
-def teacher():
-    msg = input('Would you like to check by Name, Date, or All: ')
-    return msg
+def teacher (code):
+    if code == '1234' or code == '4321':
+        return input('Would you like to check by Name, Date, or All: ')
 
 def name():
-    msg = input('Who would you like to check up on?: ')
-    return msg
+    return input('Who would you like to check up on?: ')
 
 def date():
-    msg = input('What date would you like to see? Please do year-month-day in numeric number: ')
-    return msg
+    return input('What date would you like to see? Please do year-month-day in numeric number ex: 2015-08-24: ')
+
+def wich_instructor():
+    return input('Which instructor are you Sean or Nate?: ')
+
+def password(name):
+    return input('Welcom '+ name + '! Please type in your password.: ')
 
 def main():
     while True:
-        msg = teacher()
-        if msg.lower() == 'name':
-            name = name()
-            student_core.check_up_name(name)
+        name = wich_instructor()
+        code = password(name)
+        msg = teacher(code).lower()
+        if msg == 'name':
+            student = name()
+            person = student_core.check_up_name(student)
+            print(person)
             break  
-        elif msg.lower() == 'date':
-            date = date()
-            student_core.check_up_date(date)
+        elif msg == 'date':
+            fecha = date()
+            calendario = student_core.check_up_date(fecha)
+            print(calendario)
             break
-        elif msg.lower() == 'all':    
-            student_core.check_up_all()
+        elif msg == 'all': 
+            print('Here is the whole list \n')   
+            todos = student_core.check_up_all()
+            print(todos)
             break
         else:
             print('Sorry, invalid choice.')
