@@ -1,4 +1,3 @@
-import student_core
 import disk
 import datetime
 def intro():
@@ -6,13 +5,13 @@ def intro():
     return msg
 
 def main():
-    msg = intro()
-    if msg:
-        disk.Check_in(msg)
-    else:
-        print('Sorry invalid answer')
-
-
-
+    name = intro().lower()
+    students = disk.roster()
+    current = datetime.datetime.now()
+    for item in students:
+        if name.lower() == item[0]:
+            disk.Check_in(name)
+            print('Welcome to Base Camp '+ name.title() + '! Your check in time is ' + str(current))
+        
 if __name__ == '__main__':
     main()
