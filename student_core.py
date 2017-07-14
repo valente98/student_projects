@@ -1,18 +1,18 @@
 import datetime
 import disk
-def check_up_name(student):
+def check_up_name(name):
     list_name = disk.instructor()
     check = ''
     for item in list_name:
-        if student.lower() == item[0]:
+        if name.lower() == item[0]:
             check += ('\n'+str(item))
     return check
 
-def check_up_date(fecha):
+def check_up_date(schedule):
     list_date = disk.instructor()
     check = ''
     for item in list_date:
-        if item[1].startswith(fecha):
+        if item[1].startswith(schedule):
             check += ('\n'+str(item))
     return check
 
