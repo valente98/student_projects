@@ -1,8 +1,8 @@
 import datetime
-def Check_in(msg):
+def Check_in(name):
     """(str) --> str"""
     current = datetime.datetime.now()
-    message = '\n{}, {}'.format(msg, current)
+    message = '\n{}, {}'.format(name, current)
     with open('checkins.txt', 'a') as file:
         file.write(message)
 
