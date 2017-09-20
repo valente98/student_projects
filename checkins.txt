@@ -1,0 +1,12 @@
+full_name, checkin
+valente alvarez, 2017-07-13 10:07:45.481842
+edgar guzman, 2017-07-13 10:08:24.511723
+shay shuffield, 2017-07-13 10:08:51.893580
+valente alvarez, 2017-07-13 10:09:20.866383
+valente alvarez, 2017-07-14 09:49:03.260457
+valente alvarez, 2017-07-14 09:49:54.947581
+valente alvarez, 2017-07-14 09:51:49.193111
+valente alvarez, 2017-07-14 10:20:34.974568
+valente alvarez, 2017-07-14 10:21:01.381480
+angel zapata, 2017-07-14 10:26:14.311298
+valente alvarez, 2017-09-20 14:48:05.756533
